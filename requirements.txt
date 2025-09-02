@@ -1,0 +1,7 @@
+streamlit==1.49.1
+numpy
+pandas
+matplotlib
+scikit-learn
+beautifulsoup4
+requests
