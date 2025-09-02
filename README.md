@@ -1,5 +1,7 @@
 # Phishing Website Detection Using Machine Learning (Content-Based)
 
+https://deerajgr-phishing-website-detection-using-machine-learning.streamlit.app/
+
 This is an educational project focused on detecting phishing websites using a content-based machine learning approach. Unlike traditional methods that rely on URL features (e.g., domain length), this project analyzes HTML content to classify websites as phishing or legitimate. The project uses Streamlit for an interactive web interface, Scikit-learn for machine learning, BeautifulSoup for HTML parsing, and Requests for web scraping. The dataset is custom-built from legitimate websites (Tranco List) and a simulated phishing dataset, with features extracted from HTML structure.
 
 **Note**: The phishing dataset in this version is simulated by prefixing legitimate URLs with HTTP, which often redirects to HTTPS, resulting in similar content to legitimate sites. This is a known limitation for educational purposes, and real phishing data (e.g., from PhishTank) is recommended for production use.
@@ -70,19 +72,19 @@ Seven scikit-learn classifiers are implemented:
 
 ## Project Structure
 phishing-website-detection-content-based/
-├── app.py                          # Streamlit application
-├── data_collector_for_legitimate.py # Scrapes legitimate websites
-├── data_collector_for_phishing.py  # Simulates phishing websites
-├── feature_extraction.py           # Processes HTML into feature vectors
-├── features.py                    # Defines feature extraction functions
-├── machine_learning.py            # Trains and evaluates ML models
-├── exercises.py                   # Practice script for scraping
-├── tranco_list.csv                # Source URLs (top 1M websites)
-├── structured_data_legitimate.csv  # Legitimate dataset
-├── structured_data_phishing.csv    # Simulated phishing dataset
-├── requirements.txt               # Dependencies
-├── mini_dataset/                  # Sample HTML files (from exercises.py)
-└── README.md                     # This file
+- ├── app.py                          # Streamlit application
+- ├── data_collector_for_legitimate.py # Scrapes legitimate websites
+- ├── data_collector_for_phishing.py  # Simulates phishing websites
+- ├── feature_extraction.py           # Processes HTML into feature vectors
+- ├── features.py                    # Defines feature extraction functions
+- ├── machine_learning.py            # Trains and evaluates ML models
+- ├── exercises.py                   # Practice script for scraping
+- ├── tranco_list.csv                # Source URLs (top 1M websites)
+- ├── structured_data_legitimate.csv  # Legitimate dataset
+- ├── structured_data_phishing.csv    # Simulated phishing dataset
+- ├── requirements.txt               # Dependencies
+- ├── mini_dataset/                  # Sample HTML files (from exercises.py)
+- └── README.md                     # This file
 
 
 ## Usage
